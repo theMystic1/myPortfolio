@@ -371,7 +371,7 @@ body {
   .logo p {
     font-size: 13px;
     color: blue;
-    margin: 25px;
+    margin: 25px 10px ;
   }
   .infoo{
     position: relative;
