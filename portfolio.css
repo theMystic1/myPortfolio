@@ -362,14 +362,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    width:auto;
+    width:100%;
   }
 
   .left-section {
     display: flex;
   }
   .logo p {
-    font-size: 16px;
+    font-size: 13px;
     color: blue;
     margin: 25px;
   }
@@ -428,7 +428,7 @@ body {
   }
 
   .imgg {
-    bottom: 420px;
+    bottom: 440px;
     position: relative;
     left: auto;
     width: 150px;
