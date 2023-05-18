@@ -1,0 +1,557 @@
+body {
+  background-color: rgb(57, 68, 68);
+  font-family: arial;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid rgb(153, 149, 143);
+  display: flex;
+}
+
+.topbar {
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 400px;
+  
+}
+
+.unl {
+  position: relative;
+  animation-name: unl;
+  animation-duration: 2050ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes unl {
+  0% { top: -100px; color: white;}
+  75% { top: 0px; color: rgb(255, 172, 47);}
+  100% { top: 0; color: #fff;}
+}
+
+.logo p {
+  color: #fff;
+  margin-left: 150px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: all 300ms;
+  position: relative;
+  animation-name: logo;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+  0% { left: -1000px; }
+  90% { left: 1px; color: rgb(0, 255, 76);}
+  100% { left: 0px; color: white;}
+}
+
+.logo p:hover {
+  transform: translateX(10px);
+  color: orangered;
+}
+
+.infoo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 380px 0 0;
+  }
+
+
+
+  .infoo  li {
+    padding-left: 50px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.3;
+    list-style: none;
+  }
+
+  .infoo li, a {
+    transition: all 1800ms;
+  }
+
+  .unl li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .infoo li a:hover,
+  .infoo li:hover{
+    color: orangered;
+    transform: translateY(-5px);
+  }
+  .unl li:active,
+  .logo p:active {
+    color: rgb(153, 149, 143);
+  }
+
+ .left-section {
+  position: relative;
+  top: 30px;
+  left: 0;
+  display: flex;
+  align-items: left;
+  flex-shrink: 0;
+ }
+
+
+  .icons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 0 100px ;
+    padding-top: 60px;
+    width: 40px;
+    animation-name: icons;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all 300ms;
+  } 
+   @keyframes icons {
+    0% {transform:translateY(0);}
+  50% {transform:translateY(5px);}
+  75% {transform:translateY(0px);}
+  100% {transform:translateY(-5px);}
+   }
+
+  .icon1 {
+    position: relative;
+    animation-name: icons1;
+    animation-duration: 900ms;
+    animation-timing-function: ease-out;
+    /* animation-delay: ; */
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition: all 300ms;
+  }
+
+  @keyframes icons1 {
+    0% { left: -1000px;}
+    100% {left: 0px;}
+}
+  
+.iccon {
+  position: relative;
+  animation-name: iccons1;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-out;
+  /* animation-delay: ; */
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: all 300ms;
+}
+
+@keyframes iccons1 {
+  0% { bottom: -1000px;}
+  100% {bottom: 0px;}
+}
+  
+
+.iocc {
+  position: relative;
+    animation-name: icocc;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-out;
+    /* animation-delay: ; */
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition: all 300ms;
+}
+
+@keyframes iocc {
+  0% { bottom: -1000px;}
+  100% {left: 0px;}
+}
+
+
+.icons ion-icon {
+      border: 2px solid rgb(206, 192, 186);
+      color: #fff;
+      margin: 10px 0;
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 300ms, transform 300ms;
+      
+  }
+
+
+
+  .icons ion-icon:hover {
+    background-color: rgb(182, 115, 91);
+    transform: translateX(5px);
+  }
+  
+.info {
+  flex: 1;
+  margin: 150px 50px;
+  color: #c4c0c0;
+  position: relative;
+  animation-name: info;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: all 300ms; 
+  }
+  
+  @keyframes info {
+    0% {transform:scale(0);}
+    100% {transform:scale(1);}
+  }
+.info h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.info span {
+  color: rgb(228, 71, 14);
+  transition: all 500ms;
+  cursor: pointer;
+}
+.info span:hover {
+  color: #c4c0c0;
+  translate: -5px;
+}
+
+.info h2 {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: rgb(250, 250, 250);
+  border: 1px solid orangered;
+  background-color: rgb(90, 51, 37);
+  border-radius: 20px;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background-color: transparent;
+  color: orangered;
+  border: 1px solid #fff;
+}
+
+.right-section {
+  position: relative;
+  top: 50px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes imgg {
+  0% {transform:translateY(0);}
+  100% {transform:translateY(-5px);}
+}
+
+
+.imgg {
+  width: 300px;
+  margin: 150px 150px 0 100px;
+  border-radius: 50%;
+  border: 2px solid orangered;
+  animation-name: img;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: all 3000ms;; 
+}
+
+@keyframes img {
+  0% {transform:scale(0);}
+  100% {transform:scale(1);}
+}
+
+.imgr {
+  position: relative;
+  animation-name: imgage;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: all 300ms; 
+  cursor: pointer;
+  
+}
+
+@keyframes imgage {
+  0% {transform:translateY(0);}
+  50% {transform:translateY(5px);}
+  75% {transform:translateY(0px);}
+  100% {transform:translateY(-5px);}
+}
+
+.imgg:hover {
+  rotate: 360deg;
+}
+
+.bttn {
+  position: relative;
+  animation-name: btttn;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: all 300ms;
+}
+
+@keyframes btttn {
+  0% {transform: scale(0);}
+  100% {transform:scale(1);}
+}
+
+.btn {
+  position: relative;
+  animation-name: btt;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: all 300ms; 
+  cursor: pointer;
+}
+
+@keyframes btt {
+  0% {transform:translateX(0);}
+  50% {transform:translateX(5px);}
+  75% {transform:translateX(0px);}
+  100% {transform:translateX(-5px);}
+}
+
+@media  (max-width: 650px) {
+  .main {
+     display: flex;
+     flex-direction: column;
+  }
+  body {
+    padding-bottom: 300px;
+  }
+  .topbar {
+    position: fixed;
+    top: 0;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width:auto;
+  }
+
+  .left-section {
+    display: flex;
+  }
+  .logo p {
+    font-size: 16px;
+    color: blue;
+    margin: 25px;
+  }
+  .infoo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 0 0;
+  }
+ 
+  .infoo  li {
+    font-size: 13px;
+    color: blue;
+    padding: 10px 10px;
+  }
+  .icons {
+    position: relative;
+    top: 460px;
+    display: flex;
+    flex-direction: row;
+    margin:12px  0;
+  }
+
+  .icon1, .iccon {
+    display: flex;
+  }
+
+  .icon1 ion-icon, 
+  .iccon ion-icon {
+    margin:15px 0px 10px 40px;
+  }
+
+  .info {
+    position: relative;
+    top: 190px;
+    left:0;
+    flex:1;
+    margin: 60px 20px;
+    width: 400px;
+  }
+
+  .info h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .desc p {
+    font-size: 13px;
+  }
+
+  .right-section {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .imgg {
+    bottom: 400px;
+    position: relative;
+    left: auto;
+    width: 150px;
+    /* margin: 0 10px 0 0;  */
+  }
+}
+
+
+@media  (min-width: 651px) and (max-width: 1000px){
+  .main {
+     display: flex;
+     flex-direction: column;
+  }
+  body {
+    padding-bottom: 300px;
+  }
+  .topbar {
+    position: fixed;
+    top: 0;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width:auto;
+  }
+
+  .left-section {
+    display: flex;
+  }
+  .logo p {
+    font-size: 18px;
+    margin: 25px;
+  }
+  .infoo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 0 0;
+  }
+ 
+  .infoo  li {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .icons {
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: row;
+    margin:12px  0;
+  }
+
+  .icon1, .iccon {
+    display: flex;
+  }
+
+  .icon1 ion-icon, 
+  .iccon ion-icon {
+    margin:15px 0px 10px 40px;
+  }
+
+  .info {
+    position: relative;
+    top: 250px;
+    left:0;
+    flex:1;
+    margin: 60px 20px;
+    /* width: 450px; */
+  }
+
+  .info h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .desc p {
+    font-size: 16px;
+  }
+
+  .right-section {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .imgg {
+    bottom: 400px;
+    position: relative;
+    left: auto;
+    width: 200px;
+    /* margin: 0 10px 0 0;  */
+  }
+}
+
+@media (min-width: 1001px) and (max-width:1190px) {
+  .topbar {
+    width: auto;
+  }
+
+  .logo p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* .infoo  li {
+    padding-left: 50px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.3;
+    list-style: none;
+  } */
+
+  .info {
+    /* flex: 1; */
+    width:400px;
+    margin-right: 10px;
+  }
+ 
+  .imgg {
+    width: 300px;
+  }
+}
